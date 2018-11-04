@@ -10,6 +10,7 @@
 		10D10EB0218F01C200FF7E75 /* SPModalView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D10EA6218F01C200FF7E75 /* SPModalView.framework */; };
 		10D10EB5218F01C200FF7E75 /* SPModalViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D10EB4218F01C200FF7E75 /* SPModalViewTests.swift */; };
 		10D10EB7218F01C200FF7E75 /* SPModalView.h in Headers */ = {isa = PBXBuildFile; fileRef = 10D10EA9218F01C200FF7E75 /* SPModalView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10D10EC1218F023D00FF7E75 /* SPModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D10EC0218F023D00FF7E75 /* SPModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		10D10EAF218F01C200FF7E75 /* SPModalViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPModalViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D10EB4218F01C200FF7E75 /* SPModalViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPModalViewTests.swift; sourceTree = "<group>"; };
 		10D10EB6218F01C200FF7E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10D10EC0218F023D00FF7E75 /* SPModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				10D10EA9218F01C200FF7E75 /* SPModalView.h */,
 				10D10EAA218F01C200FF7E75 /* Info.plist */,
+				10D10EC0218F023D00FF7E75 /* SPModal.swift */,
 			);
 			path = SPModalView;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					10D10EA5218F01C200FF7E75 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					10D10EAE218F01C200FF7E75 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D10EC1218F023D00FF7E75 /* SPModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		10D10EBB218F01C200FF7E75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.junkie.SPModalView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		10D10EBC218F01C200FF7E75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		10D10EBE218F01C200FF7E75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9MWA4RE55;
 				INFOPLIST_FILE = SPModalViewTests/Info.plist;
@@ -409,6 +418,7 @@
 		10D10EBF218F01C200FF7E75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9MWA4RE55;
 				INFOPLIST_FILE = SPModalViewTests/Info.plist;

@@ -25,6 +25,7 @@ public class SPModal: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 1
+        label.textAlignment = .center
         return label
     }()
     
@@ -54,11 +55,11 @@ public class SPModal: UIView {
         self.headingLabel.text = text
     }
     
-    public func set(heading textColor: UIColor) {
+    public func set(textColor: UIColor) {
         self.headingLabel.textColor = textColor
     }
     
-    public func set(heading font: UIFont) {
+    public func set(font: UIFont) {
         self.headingLabel.font = font
     }
     

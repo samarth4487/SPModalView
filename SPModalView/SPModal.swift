@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SPModal: UIView {
+public class SPModal: UIView {
     
     
     //MARK: - Properties
@@ -76,8 +76,8 @@ class SPModal: UIView {
         addSubview(headingLabel)
         headingLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor).isActive = true
         headingLabel.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor).isActive = true
-        headingLabel.leadingAnchor.constraint(equalToSystemSpacingAfter: safeAreaLayoutGuide.leadingAnchor, multiplier: 20).isActive = true
-        headingLabel.trailingAnchor.constraint(equalToSystemSpacingAfter: safeAreaLayoutGuide.trailingAnchor, multiplier: -20).isActive = true
+        headingLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
+        headingLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
     }
     
 }

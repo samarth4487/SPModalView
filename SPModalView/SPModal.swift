@@ -44,6 +44,25 @@ class SPModal: UIView {
     }
     
     
+    //MARK: - Public Setter Methods
+    
+    public func set(image: UIImage) {
+        self.imageView.image = image
+    }
+    
+    public func set(heading text: String) {
+        self.headingLabel.text = text
+    }
+    
+    public func set(heading textColor: UIColor) {
+        self.headingLabel.textColor = textColor
+    }
+    
+    public func set(heading font: UIFont) {
+        self.headingLabel.font = font
+    }
+    
+    
     //MARK: - View Adding Methods
     
     private func setupViews() {
